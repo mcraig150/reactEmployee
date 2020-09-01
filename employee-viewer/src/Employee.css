@@ -1,0 +1,31 @@
+.Employee {
+    width: 250px;
+    height: 275px;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 25px;
+    transition: transfrom 175ms ease-in;
+}
+
+.Employee:hover {
+    transform: scale(1.05);
+}
+
+.Employee > img {
+    height: 175px;
+    width: 250px;
+}
+.Employee__text {
+    padding: 5px;
+}
+.Employee__text > h2 {
+  
+}
+
+.Employee__text > p{
+ 
+}
+
