@@ -3,3 +3,9 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.buttons > button {
+    border-radius: 30px;
+    text-transform: inherit;
+    margin: 5px;
+}
