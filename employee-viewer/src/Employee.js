@@ -1,17 +1,19 @@
 import React from "react";
 import Pic from "./pic.jpg";
-import './Employee.css'
+import "./Employee.css";
 
-function Employee(props) {
-  return (
-    <div className="Employee">
-      <img className="Employee__pic" src={Pic} />
-      <div className="Employee__text">
-        <h2>{props.name}</h2>
-        <p>{props.email}</p>
+class Employee extends React.Component {
+  render() {
+    return (
+      <div className="Employee">
+        <img className="Employee__pic" src={Pic} />
+        <div className="Employee__text">
+          <h2>{this.props.emp.name}</h2>
+          <p>{this.props.emp.email}</p>
+        </div>
       </div>
-    </div>
-  );
+    );
+  }
 }
 
 export default Employee;

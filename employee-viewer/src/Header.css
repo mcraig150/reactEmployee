@@ -31,7 +31,7 @@
     border: none;
     padding: 10px;
     outline-width: 0;
-
+    width: 20vw;
 }
 
 .Header__right {
@@ -43,4 +43,8 @@
 
 .Header__right > p {
     padding: 5px;
+}
+
+.Header__search:hover {
+    cursor: pointer;
 }
