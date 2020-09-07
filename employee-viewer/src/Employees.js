@@ -24,15 +24,20 @@ class Employees extends React.Component {
     });
 
     let roleFilter = filter.filter((worker) => {
-      return (
-        worker.job
-          .toLowerCase()
-          .indexOf(
-            this.state.role
-              .toLowerCase()
-              .substring(0, this.state.role.length - 1)
-          ) === -1
-      );
+        if(this.state.role.toLocaleLowerCase() !== 'all') {
+            return (
+                worker.job
+                  .toLowerCase()
+                  .indexOf(
+                    this.state.role
+                      .toLowerCase()
+                      .substring(0, this.state.role.length - 1)
+                  ) !== -1
+              );
+        }
+        else {
+           return(worker)
+        }
     });
     console.log(roleFilter);
     return (
